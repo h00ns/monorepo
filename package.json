@@ -1,3 +1,15 @@
 {
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "react-app-1": "yarn workspace @hoon/react-app-1",
+    "react-app-2": "yarn workspace @hoon/react-app-2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.4",
+    "typescript": "^5.3.2"
+  }
 }
