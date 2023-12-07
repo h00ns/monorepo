@@ -1,15 +1,18 @@
 {
-  "packageManager": "yarn@3.6.1",
+  "name": "hoon-monorepo",
+  "packageManager": "yarn@4.0.2",
   "private": true,
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "common/*"
   ],
   "scripts": {
-    "react-app-1": "yarn workspace @hoon/react-app-1",
-    "react-app-2": "yarn workspace @hoon/react-app-2"
+    "dlx:vscode": "yarn dlx @yarnpkg/sdks vscode",
+    "react-app": "yarn workspace @hoon-monorepo/react-app"
   },
   "devDependencies": {
-    "@types/node": "^20.9.4",
-    "typescript": "^5.3.2"
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.3"
   }
 }
